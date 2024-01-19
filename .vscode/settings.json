@@ -1,0 +1,10 @@
+{
+    "tailwindCSS.includeLanguages": {
+      "templ": "html"
+    },
+    "files.associations": {
+        "*.css": "tailwindcss",
+        "*.templ": "templ",
+        "*.go": "go"
+    }
+}
