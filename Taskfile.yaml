@@ -25,6 +25,13 @@ tasks:
       - generate
     cmds:
       - go run ./cmd/server/...
+  listen:
+    desc: Run the application and watch for changes
+    deps:
+      - assets
+      - generate
+    cmds:
+      - templ generate --watch --proxy="http://localhost:3000" --cmd="go-task run"
   test:
     desc: Run the tests
     cmds:

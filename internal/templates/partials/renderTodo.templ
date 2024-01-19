@@ -5,7 +5,7 @@ import (
 )
 
 templ RenderTodo(todo *domain.Todo) {
-	<div class="block py-2 border-b-4 border-dotted border-red-900 draggable">
+	<div class="block py-2 border-b border-solid border-gray-500 draggable">
 		<form
 			method="POST"
 			action={ templ.SafeURL("/todos/"+todo.ID.String()+"/delete") }
